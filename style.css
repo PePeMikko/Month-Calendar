@@ -7,33 +7,39 @@ body{
     align-items: center;
     height: 100vh;
     width: 100%;
+    border-radius: 15px;
 }
 .calender{
-height: 600px;
-width: 500px;
+position: relative;
 }
 .month{
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   background-color: rgb(142, 219, 238);
 }
-.date{
+.weekdays{
     display: flex;
-    justify-content: center;
-}
-.weekday{
-    display: flex;
-    flex-direction: row;
-    
+    height: 50px;
+    width: 100%;
 }
 .days{
-    display: grid;
+    display: flex;
     padding: 8px;
     margin: 0px;
     color: rgb(127, 127, 128);
     background-color: black;
 }
-.weekday .days{
+.weekdays + .days{
     display: grid;
     grid-template-columns: repeat(7)1fr;
+    grid-template-rows: auto;
+   
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
