@@ -14,8 +14,8 @@ const dateOptions = {
     year: "numeric"
 }
 
-const firstDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
-const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate()
+const firstDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay() - 1;
+const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
 
 let days = "";
 const today = date.getDate()
